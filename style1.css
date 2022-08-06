@@ -1,0 +1,462 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    
+    
+    }
+  .header{
+        min-height: 100vh;
+        width:100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("finalGif.gif");
+        background-position: center;
+        background-size: cover;
+        position: relative;   
+    }   
+    @import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Roboto:wght@100;300;400;700&family=Source+Code+Pro&display=swap');
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: "imag.jpg";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.container .box {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+.container .box .title {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding-top: 100px;
+}
+/*.container .box .title .block {
+  width: 0%;
+  height: inherit;
+  background: #ffb510;
+  position: absolute;
+  animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  display: flex;
+  
+}*/
+.container .box .title h1{
+    font-family: 'Kaisei Opti', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+  color: #fff;
+  font-size: 100px;
+  -webkit-animation: mainFadeIn 2s forwards;
+  -o-animation: mainFadeIn 2s forwards;
+  animation: mainFadeIn 2s forwards;
+  animation-delay: 1.6s;
+  opacity: 0;
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  letter-spacing: 2px;
+  padding-left: -10px;
+}
+/*.container .box .title span{
+  width: 0px;
+  height: 0px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #ffb510;
+  -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 2s;
+  margin-left: 5px;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 13px;
+  right: -12px;
+}*/
+.container .box .role {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-top: 10px;
+}
+/*.container .box .role .block {
+  width: 0%;
+  height: 200px;
+  /*padding-top: 450px ;*/
+ /* margin-top: 100px;
+  margin-bottom: 100px;
+  height: inherit;
+  @-webkit-keyframes -webkit-border-radius: 50%;
+  @-webkit-keyframes -moz-border-radius: 50%;
+  background: #e91e63;
+  position: absolute;
+  
+  animation: secBlock 2s cubic-bezier(0,0,1,1) forwards;
+  animation-delay: 2s;
+  display: flex;
+  size-adjust: 0.58;
+  block-size: -200px;
+  
+
+}
+*/
+
+.container .box .role h1 {
+    font-family: 'Kaisei Opti', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    padding-top: 600px;
+  animation: secFadeIn 2s forwards;
+  animation-delay: 3.2s;
+  opacity: 0;
+  font-weight: 600;
+  font-family: 'Lato';
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  padding-left: 100px;
+}
+@keyframes mainBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes secBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes mainFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes popIn {
+  0% {
+    width: 0px;
+    height: 0px;
+    background: #e9d856;
+    border: 0px solid #fff;
+    opacity: 0;
+  }
+  50% {
+    width: 10px;
+    height: 10px;
+    background: #e9d856;
+    opacity: 1;
+    bottom: 45px;
+  }
+  65% {
+    width: 7px;
+    height: 7px;
+    bottom: 0px;
+    width: 15px;
+  }
+  80% {
+    width: 10px;
+    height: 10px;
+    bottom: 20px;
+  }
+  100% {
+    width: 7px;
+    height: 7px;
+    background: #e9d856;
+    border: 0px solid #222;
+    bottom: 13px;
+  }
+}
+@keyframes secFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+footer {
+  width: 350px;
+  height: 80px;
+  background: #ffb510;
+  position: absolute;
+  right: 0;
+  bottom: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: top 0.8s forwards;
+  animation-delay: 4s;
+}
+/*footer span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #232323;
+  font-family: 'Poppins';
+}
+footer span i {
+  margin-right: 25px;
+  font-size: 22px;
+  color: #232323;
+  animation: icon 2s forwards;
+  animation-delay: 4s;
+  opacity: 0;
+}*/
+@keyframes top {
+  0% {
+    opacity: 0;
+    bottom: -80px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+@keyframes icon {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3) rotate(-2deg);
+  }
+  100% {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+/*.info{
+    min-height: 100vh;
+        width:100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("finalGif.gif"); 
+        background-position: center;
+        background-color: black;
+        background-size: cover;
+        position: relative;   
+}*/
+
+body {
+    background: #141414;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    color: #6D6D6D;
+    opacity: 0;
+    animation: fade-in 500ms ease 200ms 1 forwards;
+  }
+  body h1 {
+    color: #fff;
+    font-size: 50px;
+  }
+  body a {
+    padding: 5px 15px;
+    color: #6D6D6D;
+    font-size: 23.5px;
+    text-decoration: none;
+    text-transform: none;
+    /*border: 1px solid #6D6D6D;*/
+    transition: all 300ms ease;
+  }
+  body a:hover {
+    color: #EBECEC;
+    border: 1px solid #EBECEC;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .logo {
+    width: 110px;
+    height: 30px;
+    margin: 15px 60px;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2000px-Netflix_2015_logo.svg.png");
+    background-size: cover;
+  }
+  
+  .wrapper {
+    margin: 100px 0;
+    text-align: center;
+  }
+  
+  .profile {
+    width: 150px;
+  }
+  .profile-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 70px auto;
+  }
+  .profile-icon {
+    width: 150px;
+    height: 150px;
+    border: 7px solid #1f1f1f;
+    transition: all 300ms ease;
+  }
+  .profile-name {
+    margin: 20px 0;
+    line-height: 1.25em;
+    transition: all 300ms ease;
+  }
+  
+  .profile:hover .profile-icon {
+    border: 6px solid #fff;
+  }
+  
+  .profile:hover .profile-name {
+    color: #fff;
+  }
+  .profile1 {
+    /*background-image: url("monica.jpg");*/
+  position: relative;
+  flex: 1;
+  max-width: 400px;
+  /* height: 300px; */
+  /* margin: 15px; */
+  overflow: hidden;
+  background-color: #4f4c4c;
+  align-items: center;
+  padding: auto;
+  padding-left: auto;
+  padding-right: auto;
+  /* border-radius: 20px; */
+}
+    /*width: 20%;
+    background-size: cover;
+  }*/
+  .profile2 {
+    position: relative;
+  flex: 1;
+  max-width: 400px;
+  /* height: 300px; */
+  /* margin: 15px; */
+  overflow: hidden;
+  background-color: #4f4c4c;
+  align-items: center;
+  padding: auto;
+  padding-left: auto;
+  padding-right: auto;
+    /*background-image: url("chandler.jpg");
+    background-size: cover;*/
+  }
+  .profile3{
+    position: relative;
+  flex: 1;
+  max-width: 400px;
+  /* height: 300px; */
+  /* margin: 15px; */
+  overflow: hidden;
+  background-color: #4f4c4c;
+  align-items: center;
+  padding: auto;
+  padding-left: auto;
+  padding-right: auto;
+    /*background-image: url("ross.jpg");
+    background-size: cover;*/
+  }
+  .profile4 {
+    position: relative;
+  flex: 1;
+  max-width: 400px;
+  /* height: 300px; */
+  /* margin: 15px; */
+  overflow: hidden;
+  background-color: #4f4c4c;
+  align-items: center;
+  padding: auto;
+  padding-left: auto;
+  padding-right: auto;
+    /*background-image: url("rachelFinal.png");
+    background-size: cover;*/
+  }
+
+  .profile5{
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+    /* height: 300px; */
+    /* margin: 15px; */
+    overflow: hidden;
+    background-color: #4f4c4c;
+    align-items: center;
+    padding: auto;
+    padding-left: auto;
+    padding-right: auto;
+    /*background-image: url("phoebeFinal.png");
+    background-size: cover;*/
+  }
+
+  .profile6 {
+    position: relative;
+  flex: 1;
+  max-width: 400px;
+  /* height: 300px; */
+  /* margin: 15px; */
+  overflow: hidden;
+  background-color: #4f4c4c;
+  align-items: center;
+  padding: auto;
+  padding-left: auto;
+  padding-right: auto;
+    /*background-image: url("joey.jpg");
+    background-size: cover;*/
+  }
+.about{
+  
+    margin: 100px 0;
+    text-align: center;
+  
+}
+.aboutText{
+  font-size: 28px;
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 30px;
+  padding-top: 20px;
+}
+.BasicInfo{
+  color: #EBECEC;
+}
+  
+  
